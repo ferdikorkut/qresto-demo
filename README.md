@@ -1,14 +1,13 @@
-# QResto – digitales Bestell- und Speisekartensystem für Restaurants
+# QResto – digitales Bestell- und Speisekartensystem für die Gastronomie
 
 > 🇬🇧 [English version below](#english)
 >
-> Der Quellcode liegt in einem privaten Repository. Diese Seite beschreibt das Projekt;
-> die Live-Version ist oben rechts unter „About“ verlinkt.
+> Der Quellcode liegt in einem privaten Repository. Diese Seite beschreibt das Projekt.
 
-QResto ist eine Web-Anwendung, mit der Restaurants **ohne App-Installation** Bestellungen am
+QResto ist eine Web-Anwendung, mit der Gastronomiebetriebe **ohne App-Installation** Bestellungen am
 Tisch (per QR-Code), online zur Abholung oder Lieferung annehmen und ihre Speisekarte digital
 verwalten. Gäste bestellen im Browser am Handy; Service, Küche und Verwaltung arbeiten auf
-eigenen Bildschirmen. Ein Restaurant kann einzelne Bausteine nutzen (z. B. nur die digitale
+eigenen Bildschirmen. Ein Betrieb kann einzelne Bausteine nutzen (z. B. nur die digitale
 Speisekarte) oder alles zusammen.
 
 **Status:** in aktiver Entwicklung, Pilotbetrieb in Vorbereitung.
@@ -19,9 +18,9 @@ Speisekarte) oder alles zusammen.
 
 - **Gäste:** Speisekarte in 8 Sprachen lesen, am Tisch per QR-Code bestellen, online zur Abholung
   oder Lieferung bestellen und den Bestellstatus live verfolgen.
-- **Restaurant-Personal:** eigene Ansichten für Service (Kellner), Küche und Online-Bestellungen.
+- **Personal:** eigene Ansichten für Service (Kellner), Küche und Online-Bestellungen.
 - **Inhaber:** Speisekarte, Personal, Öffnungszeiten, Liefergebiet und Zahlungsarten selbst pflegen.
-- **Plattform-Betreiber:** mehrere Restaurants in einer Installation verwalten (Mandantenfähigkeit).
+- **Plattform-Betreiber:** mehrere Betriebe in einer Installation verwalten (Mandantenfähigkeit).
 
 ## Funktionen
 
@@ -31,7 +30,7 @@ Speisekarte) oder alles zusammen.
   Mindestbestellwert, Wunschzeit
 - Live-Bestellstatus (bestätigt, fertig, unterwegs) und Stornierung durch den Gast
 - 8 Sprachen (DE, EN, FR, IT, ES, TR, RU, PL), Allergene und Ernährungshinweise
-- Verschiedene Designs pro Restaurant (Farbpaletten und Layouts)
+- Verschiedene Designs pro Betrieb (Farbpaletten und Layouts)
 
 **Personal**
 - Kellner-Ansicht pro Tisch, Küchen-Ansicht, Online-Bestellpanel mit Bestätigen/Ablehnen/Zeit zusagen
@@ -57,7 +56,7 @@ Speisekarte) oder alles zusammen.
 
 ## Sicherheit und Datenschutz (DSGVO)
 
-- **Row Level Security** auf allen Tabellen; jede Rolle sieht nur die Daten ihres Restaurants
+- **Row Level Security** auf allen Tabellen; jede Rolle sieht nur die Daten ihres Betriebs
 - **Preise werden auf dem Server berechnet** – der Browser schickt nur Artikel und Mengen,
   ein manipulierter Preis wird abgelehnt
 - **Signierte Lieferadresse** (HMAC): nur eine vom Server geprüfte Adresse wird angenommen
@@ -81,15 +80,14 @@ Speisekarte) oder alles zusammen.
 
 <a id="english"></a>
 
-# QResto – digital ordering and menu system for restaurants
+# QResto – digital ordering and menu system for the hospitality industry
 
-> The source code lives in a private repository. This page describes the project;
-> the live version is linked under "About" at the top right.
+> The source code lives in a private repository. This page describes the project.
 
-QResto is a web application that lets restaurants take orders **without any app installation**:
+QResto is a web application that lets hospitality businesses take orders **without any app installation**:
 at the table via QR code, online for pickup or delivery, and manage their menu digitally.
 Guests order in the browser on their phone; waiters, kitchen and management each work on their
-own screens. A restaurant can use single modules (e.g. only the digital menu) or everything together.
+own screens. A business can use single modules (e.g. only the digital menu) or everything together.
 
 **Status:** in active development, pilot operation in preparation.
 
@@ -97,9 +95,9 @@ own screens. A restaurant can use single modules (e.g. only the digital menu) or
 
 - **Guests:** read the menu in 8 languages, order at the table via QR code, order online for pickup
   or delivery and follow the order status live.
-- **Restaurant staff:** dedicated views for waiters, kitchen and online orders.
+- **Staff:** dedicated views for waiters, kitchen and online orders.
 - **Owners:** manage menu, staff, opening hours, delivery area and payment methods themselves.
-- **Platform operator:** manage several restaurants in one installation (multi-tenant).
+- **Platform operator:** manage several businesses in one installation (multi-tenant).
 
 ## Features
 
@@ -109,7 +107,7 @@ own screens. A restaurant can use single modules (e.g. only the digital menu) or
   preferred time
 - Live order status (confirmed, ready, on the way) and cancellation by the guest
 - 8 languages (DE, EN, FR, IT, ES, TR, RU, PL), allergens and dietary information
-- Different designs per restaurant (colour palettes and layouts)
+- Different designs per business (colour palettes and layouts)
 
 **Staff**
 - Waiter view per table, kitchen view, online order panel to confirm, reject and promise a time
@@ -135,7 +133,7 @@ own screens. A restaurant can use single modules (e.g. only the digital menu) or
 
 ## Security and privacy (GDPR)
 
-- **Row Level Security** on every table; each role only sees its own restaurant's data
+- **Row Level Security** on every table; each role only sees its own business's data
 - **Prices are calculated on the server** – the browser only sends items and quantities,
   a manipulated price is rejected
 - **Signed delivery address** (HMAC): only an address checked by the server is accepted
